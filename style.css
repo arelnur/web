@@ -1,179 +1,84 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
+* {margin: 0; padding: 0; box-sizing: border-box;} 
 body {
-	font-family: 'Roboto', sans-serif;
+    font-family:'Roboto Slab', serif;
 	font-weight: 400;
+    font-size: 12px;
 }
-
+h1 {font-weight: 700; font-size: 26px;}
 .container {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding-left: 16px;
-	padding-right: 16px;
+    padding: 56px 36px;
+    min-width: 376px;
+    max-width: 1200px;
+    height: 776px;
+    margin: 0 auto;
 }
+main {margin-top: 25px;}
+.text {line-height: 18px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;}
+.right {display: flex;
+	justify-content: center;
+    position: relative;}
 
-.title {
-	font-weight: 700;
-	font-size: 56px;
+.main-img {width: 146px; height: 146px;}
+.main-shadow {
+    height: 27px;
+	position: absolute;
+	bottom: -15px;
+	z-index: -1;
 }
-
-/* Section footer*/
-
-.footer {
-	background-color: black;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	color: white;
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
-
-.footer__wrapper {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 146px;
-}
-
-.footer__left {
-}
-
-.footer__logo {
-	width: 115px;
-	height: 68px;
+.item:first-child {display: none;}
+.item {
+    width: 35%;
 	margin-bottom: 30px;
+	justify-content: space-between;
 }
-
-.footer__socials {
-	display: flex;
+.item:not(:last-child) {margin-right: 40px;}
+.item-name {font-weight: 700; margin-bottom: 5px;}
+.item-text {font-size: 10px; width: 105px;}
+@media (min-width:768px) {.container {padding-left: 86px; padding-right: 86px;}
+.left {width: 60%;}
+.text {line-height: 21px; font-size: 14px;}
+.text:last-child {margin-bottom: 0;}
+main {display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.main-img {width: 180px;}
+.main-shadow {width: 212px; height: 34px;}
+footer {width: 60%; flex-wrap: nowrap;}
+.item {width: 110px;}
+.item:not(:last-child) {margin-right: 55px;}
+.item-name {font-size: 15px;}
+.item-text {font-size: 11px;}
 }
-
-.footer__link:not(:last-child) {
-	margin-right: 18px;
-}
-
-.footer__icon {
-	width: 33px;
-	height: 33px;
-}
-
-.footer__right {
-}
-
-.footer__item {
-	display: flex;
-	align-items: center;
-}
-
-.footer__item:not(:last-child) {
-	margin-bottom: 25px;
-}
-
-.footer__itemImage {
-	width: 27px;
-	width: 27px;
-	margin-right: 22px;
-}
-
-.footer__itemTitle {
-}
-
-@media (max-width: 576px) {
-	.footer__left {
-		margin-bottom: 48px;
+@media (min-width:992px) {
+    .text {
+        line-height: 36px;
+        font-size: 24px;
+    }
+    h1 {font-size: 55px;}
+    .main-img {width: 314px;height: 314px;}
+    .main-shadow {width: 366px; height: 59px;}
+    .item {width: 150px; height: 175px;}
+    .item:first-child {display: block;}
+    .item-text {width: 150px;}
+    .item-name {font-size: 25px;}
+    .item-text {font-size: 18px;}
+    .item:nth-child(2) {margin-left: 150px;}
+    footer {position: relative;
+        width: 100%;
+        align-items: center;}
+    .footer_img {width: 232px; height: 204px;}
+    .footer_shadow {
+        width: 190px;
+        height: 32px;
+        position: absolute;
+        bottom: -15px;
+        left: 30px;
+        z-index: -1;}
 	}
-	.footer__wrapper {
-		flex-direction: column;
-		justify-content: flex-start;
-	}
-}
-
-/* Секция price*/
-
-.price {
-	background-color: #9dc9c8;
-	padding-top: 180px;
-	padding-bottom: 180px;
-}
-
-.price__block {
-	margin-bottom: 155px;
-}
-
-.price__name {
-	font-size: 26px;
-}
-
-.price__value {
-	font-size: 80px;
-}
-
-.price__footer {
-	display: flex;
-}
-
-.price__title {
-	margin-bottom: 54px;
-}
-
-.price__item {
-	width: 294px;
-}
-
-.price__item:not(:last-child) {
-	margin-right: 70px;
-}
-
-.price__itemHeading {
-	margin-bottom: 10px;
-	font-size: 25px;
-}
-
-.price__itemText {
-	font-size: 18px;
-}
-
-/* Секция program */
-
-.program {
-	padding-top: 120px;
-	padding-bottom: 120px;
-}
-
-.program__wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 50px 5%;
-}
-
-.program__title {
-	margin-bottom: 90px;
-}
-
-.program__item {
-	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
-	border-radius: 30px;
-	overflow: hidden;
-	width: 30%;
-	margin-bottom: 40px;
-}
-
-.program__itemHeader {
-	height: 160px;
-	background-color: yellow;
-}
-
-.program__itemFooter {
-	padding: 20px;
-}
-
-.program__itemHeading {
-	font-weight: 700;
-	font-size: 30px;
-	margin-bottom: 32px;
-}
-
-.program__itemText {
-	font-size: 26px;
-}
