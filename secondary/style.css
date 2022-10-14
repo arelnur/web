@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;display=swap');
+
+body {
+  font-family: Lato, sans-serif;
+  font-size: 11px;
+  padding: 10px;
+}
+.chart {width: 500px;}
+.car {
+  height: 50px;
+  margin: 0 0 5px;
+  padding: 18px;
+  color: #fff;
+  box-sizing: border-box;
+}
+.iphone-xr {
+  width: 463px;
+  background-color: red;
+}
+.iphone-11 {
+  width: 373px;
+  background-color: lightblue;
+  color: #000;
+}
+.samsung-a10 {
+  width: 303px;
+  background-color: bisque;
+  color: #000;
+}
+.samsung-a50 {
+  width: 242px;
+  background-color: cyan;
+  color: #000;
+}
+.samsung-a20 {width: 192px; background-color: black;}
+span {font-weight: bold;}
